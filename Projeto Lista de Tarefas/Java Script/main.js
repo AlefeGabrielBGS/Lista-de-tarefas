@@ -6,6 +6,17 @@ const removeValores = document.getElementById(`removeValores`)
 
 function clicar() {
     const ler = pegaValores.value;
+    if (!ler) {
+        alert(`O campo de texto está vazio`)
+        return
+    }
+    const tarefasExistentes = listaDeTarefas.querySelectorAll('li')
+    for (const tarefas of tarefasExistentes) {
+        if (tarefa.textContent = ``) {
+            alert(`você já digitou essa tarefa`)
+            return
+        }
+    }
     const novaLista = document.createElement(`li`)
     novaLista.textContent = ler;
     listaDeTarefas.appendChild(novaLista)
@@ -19,7 +30,7 @@ function clicar() {
     remover.addEventListener('click', () => {
         remover = listaDeTarefas.innerHTML = ``
     })
-    if (listaDeTarefas === novaLista.innerHTML) {
+    if (novaLista === novaLista) {
         alert(`Você já inseriu essa Tarefa`)
     }
     
