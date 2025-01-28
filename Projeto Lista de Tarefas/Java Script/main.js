@@ -12,7 +12,7 @@ function clicar() {
     }
     const tarefasExistentes = listaDeTarefas.querySelectorAll('li')
     for (const tarefas of tarefasExistentes) {
-        if (tarefa.textContent = ``) {
+        if (tarefa.textContent === ler) {
             alert(`você já digitou essa tarefa`)
             return
         }
@@ -30,9 +30,7 @@ function clicar() {
     remover.addEventListener('click', () => {
         remover = listaDeTarefas.innerHTML = ``
     })
-    if (novaLista === novaLista) {
-        alert(`Você já inseriu essa Tarefa`)
-    }
+   
     
 
     
