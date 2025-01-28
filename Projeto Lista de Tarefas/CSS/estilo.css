@@ -99,6 +99,7 @@ button:hover {
 #listaDeTarefas li span {
     color: #e0e0e0;
     margin-right: 15px; /* Adiciona espaço entre o texto e o botão "Feito" */
+    flex-grow: 1; /* Faz o texto ocupar todo o espaço disponível */
 }
 
 /* Botão Feito */
