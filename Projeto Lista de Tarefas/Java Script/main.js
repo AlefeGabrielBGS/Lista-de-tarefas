@@ -11,7 +11,7 @@ function clicar() {
         return
     }
     const tarefasExistentes = listaDeTarefas.querySelectorAll('li')
-    for (const tarefas of tarefasExistentes) {
+    for (const tarefa of tarefasExistentes) {
         if (tarefa.textContent === ler) {
             alert(`você já digitou essa tarefa`)
             return
