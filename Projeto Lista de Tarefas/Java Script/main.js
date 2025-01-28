@@ -7,13 +7,13 @@ const removeValores = document.getElementById(`removeValores`)
 function clicar() {
     const ler = pegaValores.value;
     if (!ler) {
-        alert(`O campo de texto está vazio`)
+        alert(`[ERRO] O campo de texto está vazio`)
         return
     }
     const tarefasExistentes = listaDeTarefas.querySelectorAll('li')
     for (const tarefa of tarefasExistentes) {
         if (tarefa.textContent === ler) {
-            alert(`você já digitou essa tarefa`)
+            alert(`[ERRO] Você já digitou essa tarefa`)
             return
         }
     }
