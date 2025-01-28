@@ -85,7 +85,7 @@ button:hover {
 
 #listaDeTarefas li {
     display: flex; /* Flexbox para alinhar os itens */
-    justify-content: space-between; /* Garante que o botão esteja à direita */
+    justify-content: space-between; /* Garante que o texto fique à esquerda e o botão à direita */
     align-items: center; /* Alinha os itens verticalmente */
     background-color: #1e1e1e;
     padding: 15px 20px;
@@ -102,15 +102,7 @@ button:hover {
     padding: 8px 15px;
     border-radius: 4px;
     cursor: pointer;
-    margin-left: 20px;
     white-space: nowrap; /* Impede o texto do botão de quebrar em múltiplas linhas */
-}
-
-/* Alinhar o botão "Feito" à direita */
-#listaDeTarefas li span {
-    color: #e0e0e0;
-    margin-right: 15px; /* Espaçamento entre o texto e o botão */
-    flex-grow: 1; /* Faz o texto ocupar todo o espaço disponível */
 }
 
 /* Estilo de conclusão */
