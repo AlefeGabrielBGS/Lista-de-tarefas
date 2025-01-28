@@ -19,6 +19,9 @@ function clicar() {
     remover.addEventListener('click', () => {
         remover = listaDeTarefas.innerHTML = ``
     })
+    if (listaDeTarefas === listaDeTarefas) {
+        alert(`Você já inseriu essa Tarefa`)
+    }
     
 
     
