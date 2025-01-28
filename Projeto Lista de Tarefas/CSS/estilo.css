@@ -104,7 +104,7 @@ button:hover {
     border-radius: 4px;
     cursor: pointer;
     margin-left: 610px;
-    height: 500; /* Espaçamento do botão em relação ao texto */
+    height: 1000; /* Espaçamento do botão em relação ao texto */
 }
 
 #listaDeTarefas button:hover {
