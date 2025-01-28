@@ -85,7 +85,7 @@ button:hover {
 
 #listaDeTarefas li {
     display: flex; /* Flexbox para alinhar os itens */
-    justify-content: space-between; /* Alinha o texto à esquerda e o botão à direita */
+    justify-content: space-between; /* Garante que o botão esteja à direita */
     align-items: center; /* Alinha os itens verticalmente */
     background-color: #1e1e1e;
     padding: 15px 20px;
