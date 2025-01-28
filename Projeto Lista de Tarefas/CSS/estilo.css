@@ -1,0 +1,106 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Título */
+h1 {
+    color: #444;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Input de texto */
+#pegaValores {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Botões */
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-left: 5px;
+}
+
+/* Botão Adicionar */
+#adicionaTarefas {
+    background-color: #4caf50;
+    color: white;
+}
+
+#adicionaTarefas:hover {
+    background-color: #45a049;
+}
+
+/* Botão Remover */
+#removeValores {
+    background-color: #f44336;
+    color: white;
+}
+
+#removeValores:hover {
+    background-color: #e53935;
+}
+
+/* Lista de Tarefas */
+#listaDeTarefas {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+#listaDeTarefas li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Botão Feito */
+#listaDeTarefas button {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#listaDeTarefas button:hover {
+    background-color: #1976d2;
+}
+
+/* Efeito de tarefa concluída */
+#listaDeTarefas li.done {
+    text-decoration: line-through;
+    color: #999;
+    background-color: #f0f0f0;
+}
