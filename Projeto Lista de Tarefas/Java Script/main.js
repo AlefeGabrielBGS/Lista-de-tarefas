@@ -19,7 +19,7 @@ function clicar() {
     remover.addEventListener('click', () => {
         remover = listaDeTarefas.innerHTML = ``
     })
-    if (listaDeTarefas === listaDeTarefas) {
+    if (listaDeTarefas === novaLista.innerHTML) {
         alert(`Você já inseriu essa Tarefa`)
     }
     
