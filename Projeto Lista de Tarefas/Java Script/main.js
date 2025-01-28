@@ -1,6 +1,7 @@
 const pegaValores = document.getElementById('pegaValores')
 const adicionarTarefas = document.getElementById('adicionaTarefas')
 const listaDeTarefas = document.getElementById('listaDeTarefas')
+const removeValores = document.getElementById(`removeValores`)
 
 
 function clicar() {
@@ -14,6 +15,10 @@ function clicar() {
         novaLista.style.textDecoration = 'line-through';
     })
     listaDeTarefas.appendChild(tarefaFeita)
+    const remover = removeValores
+    remover = listaDeTarefas.innerHTML = ``
+
+    
 
     
     
