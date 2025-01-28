@@ -102,6 +102,7 @@ button:hover {
 
 #listaDeTarefas button {
     background-color: #2196f3;
+    text-align: left;
     color: white;
     padding: 8px 15px;
     border-radius: 4px;
