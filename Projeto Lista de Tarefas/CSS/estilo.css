@@ -103,7 +103,7 @@ button:hover {
     padding: 8px 15px;
     border-radius: 4px;
     cursor: pointer;
-    margin-left: 620px; /* Espaçamento do botão em relação ao texto */
+    margin-left: 610px; /* Espaçamento do botão em relação ao texto */
 }
 
 #listaDeTarefas button:hover {
