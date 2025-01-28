@@ -85,8 +85,8 @@ button:hover {
 
 #listaDeTarefas li {
     display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Alinha os itens à esquerda */
+    justify-content: space-between; /* Garante que o botão "Feito" fique à direita */
+    align-items: center; /* Alinha os itens verticalmente */
     background-color: #1e1e1e;
     padding: 15px 20px;
     margin-bottom: 15px;
@@ -95,11 +95,10 @@ button:hover {
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Textos */
+/* Alinhar o texto à esquerda */
 #listaDeTarefas li span {
-    flex-grow: 1;
     color: #e0e0e0;
-    margin-right: 15px; /* Espaço entre o texto e o botão "Feito" */
+    margin-right: 15px; /* Adiciona espaço entre o texto e o botão "Feito" */
 }
 
 /* Botão Feito */
@@ -109,6 +108,7 @@ button:hover {
     padding: 8px 15px;
     border-radius: 4px;
     cursor: pointer;
+    margin-left: 10px; /* Espaçamento do botão em relação ao texto */
 }
 
 #listaDeTarefas button:hover {
