@@ -16,7 +16,10 @@ function clicar() {
     })
     listaDeTarefas.appendChild(tarefaFeita)
     const remover = removeValores
-    remover = listaDeTarefas.innerHTML = ``
+    remover.addEventListener('click', () => {
+        remover = listaDeTarefas.innerHTML = ``
+    })
+    
 
     
 
