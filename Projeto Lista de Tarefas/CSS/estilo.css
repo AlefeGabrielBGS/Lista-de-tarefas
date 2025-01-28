@@ -7,45 +7,56 @@
 
 /* Estilo do body */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Fundo escuro */
+    color: #e0e0e0; /* Cor de texto clara para contraste */
     text-align: center;
     padding: 20px;
 }
 
 /* Título */
 h1 {
-    color: #444;
+    color: #ffffff;
     margin-bottom: 20px;
     font-size: 2rem;
+    font-weight: 600;
 }
 
 /* Input de texto */
 #pegaValores {
     width: 70%;
-    padding: 10px;
+    padding: 12px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #333;
     border-radius: 4px;
+    background-color: #333; /* Fundo escuro do input */
+    color: #fff; /* Cor do texto clara */
     margin-bottom: 20px;
+}
+
+#pegaValores::placeholder {
+    color: #bbb; /* Cor do placeholder */
 }
 
 /* Botões */
 button {
-    padding: 10px 15px;
+    padding: 12px 18px;
     font-size: 16px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     margin-left: 5px;
+}
+
+button:hover {
+    opacity: 0.85;
 }
 
 /* Botão Adicionar */
 #adicionaTarefas {
     background-color: #4caf50;
-    color: white;
+    color: #fff;
 }
 
 #adicionaTarefas:hover {
@@ -55,7 +66,7 @@ button {
 /* Botão Remover */
 #removeValores {
     background-color: #f44336;
-    color: white;
+    color: #fff;
 }
 
 #removeValores:hover {
@@ -74,23 +85,26 @@ button {
 
 #listaDeTarefas li {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: #fff;
-    padding: 10px 15px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    justify-content: space-between; /* Alinha o botão à esquerda */
+    background-color: #1e1e1e;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    border-radius: 6px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Botão Feito */
+#listaDeTarefas li span {
+    flex-grow: 1;
+    color: #e0e0e0;
+}
+
 #listaDeTarefas button {
     background-color: #2196f3;
     color: white;
-    border: none;
+    padding: 8px 15px;
     border-radius: 4px;
-    padding: 5px 10px;
     cursor: pointer;
 }
 
@@ -101,6 +115,6 @@ button {
 /* Efeito de tarefa concluída */
 #listaDeTarefas li.done {
     text-decoration: line-through;
-    color: #999;
-    background-color: #f0f0f0;
+    color: #888; /* Texto riscado com cor mais suave */
+    background-color: #333; /* Alteração do fundo para dar efeito de conclusão */
 }
