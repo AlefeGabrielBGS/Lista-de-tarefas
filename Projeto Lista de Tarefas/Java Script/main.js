@@ -29,14 +29,7 @@ function clicar() {
     const remover = removeValores
     remover.addEventListener('click', () => {
         remover = listaDeTarefas.innerHTML = ``
-    })
-   
-    
-
-    
-
-    
-    
+    })    
 }
 
 
